@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Auto Metal Forge | Truck and Lorry Body Builders, Palakkad</title>
-<meta name="description" content="Auto Metal Forge builds and repairs truck and lorry bodies at Kizhakkancheri Kavu, Palakkad, Kerala. Cargo, container, tipper and platform bodies, fabrication, welding and painting, led by 20+ years of experience.">
+<meta name="description" content="Auto Metal Forge builds and repairs truck and lorry bodies at Kizhakkancheri Kavu, Palakkad, Kerala. Container, load and tipper bodies, fabrication, welding and painting, led by 20+ years of experience.">
 <meta property="og:title" content="Auto Metal Forge | Truck and Lorry Body Builders">
 <meta property="og:description" content="Truck and lorry bodies built on your chassis, in Palakkad.">
 <meta property="og:image" content="logo.png">
@@ -86,7 +86,17 @@ section{padding:108px 0}
 .type:hover p{color:#b5c1d8}
 .type h3{font-size:19px;margin-bottom:12px}
 .type p{font-size:15.5px;color:var(--muted)}
-.type svg{width:64px;height:34px;margin-bottom:22px;display:block;fill:none;stroke:var(--brass);stroke-width:2;stroke-linejoin:round}
+
+
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:-24px 0 28px}
+.tab{font:700 14px var(--body);padding:10px 22px;background:#fff;color:var(--night);border:1px solid #c5ccd8;cursor:pointer;transition:background .2s,color .2s}
+.tab:hover{border-color:var(--brass)}
+.tab[aria-pressed="true"]{background:var(--night);color:#fff;border-color:var(--night)}
+.type[hidden]{display:none}
+.tag{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8a6a2c;margin-bottom:14px}
+.type:hover .tag{color:var(--brass-2)}
+.cft{color:#8a6a2c;font-size:1.25em}
+.type:hover .cft{color:var(--brass-2)}
 
 /* craft */
 .craft{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:start}
@@ -136,6 +146,8 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   .hero{padding:64px 0 28px}
 }
 @media (max-width:600px){
+  .tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}
+  .tab{white-space:nowrap}
   .logo img{height:36px}
   .types,.row{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
@@ -166,7 +178,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 <div class="hero">
   <div class="wrap">
     <h1 class="rise">Truck bodies built to carry the load, and keep earning.</h1>
-    <p class="lead rise r2">Auto Metal Forge builds and repairs bodies for trucks and lorries on your chassis, led by a craftsman with more than 20 years in automobile body work.</p>
+    <p class="lead rise r2">Containers, load bodies and tippers for trucks and lorries, built on your chassis and led by a craftsman with more than 20 years in automobile body work.</p>
     <div class="cta rise r3">
       <a class="btn" href="#contact">Get a quote</a>
       <a class="btn ghost" href="#bodies">See body types</a>
@@ -208,34 +220,26 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   <div class="wrap">
     <div class="head">
       <h2>Bodies for the work your truck does</h2>
-      <p>Tell us the load, the route and the chassis. We build the body to suit, instead of fitting you into a standard size.</p>
+      <p>Containers, load bodies and tippers, from mini trucks to heavy multi-axle lorries. Tell us the load and the chassis, and we build the body to suit.</p>
     </div>
+    <div class="tabs" role="group" aria-label="Filter body types"><button type="button" class="tab" data-f="all" aria-pressed="true">All</button><button type="button" class="tab" data-f="c" aria-pressed="false">Containers</button><button type="button" class="tab" data-f="l" aria-pressed="false">Load bodies</button><button type="button" class="tab" data-f="t" aria-pressed="false">Tippers</button></div>
     <div class="types">
-      <div class="type">
-        <svg viewBox="0 0 64 34" aria-hidden="true"><path d="M4 28V10h30v18M34 28V14h14l8 8v6M10 28h0"/><circle cx="14" cy="29" r="3"/><circle cx="46" cy="29" r="3"/></svg>
-        <h3>Open cargo bodies</h3><p>Goods-carrier bodies with strong floors and sides, for general freight and everyday loads.</p>
-      </div>
-      <div class="type">
-        <svg viewBox="0 0 64 34" aria-hidden="true"><path d="M4 28V6h34v22M38 28V14h12l8 8v6"/><circle cx="14" cy="29" r="3"/><circle cx="48" cy="29" r="3"/></svg>
-        <h3>Closed container bodies</h3><p>Fully enclosed bodies that keep goods dry, clean and secure on the road.</p>
-      </div>
-      <div class="type">
-        <svg viewBox="0 0 64 34" aria-hidden="true"><path d="M4 28L10 8h28l-4 20M38 28V14h12l8 8v6"/><circle cx="14" cy="29" r="3"/><circle cx="48" cy="29" r="3"/></svg>
-        <h3>Tipper bodies</h3><p>Heavy steel bodies for sand, aggregate, soil and construction material.</p>
-      </div>
-      <div class="type">
-        <svg viewBox="0 0 64 34" aria-hidden="true"><path d="M4 22h34M38 28V14h12l8 8v6M4 22v6h34"/><circle cx="14" cy="29" r="3"/><circle cx="48" cy="29" r="3"/></svg>
-        <h3>Platform and flatbed</h3><p>Open decks for long, bulky or palletised loads that need easy loading from any side.</p>
-      </div>
-      <div class="type">
-        <svg viewBox="0 0 64 34" aria-hidden="true"><path d="M8 28V12h22v16M30 28V16h10l8 8v4"/><circle cx="16" cy="29" r="3"/><circle cx="40" cy="29" r="3"/></svg>
-        <h3>Light commercial bodies</h3><p>Load bodies for mini trucks and pickups used for local delivery and daily trade.</p>
-      </div>
-      <div class="type">
-        <svg viewBox="0 0 64 34" aria-hidden="true"><path d="M6 28V8l12 8 12-8 12 8 12-8v20z"/></svg>
-        <h3>Custom bodies</h3><p>Built to your drawing, your load and your dimensions, with the finish and fittings you ask for.</p>
-      </div>
+      <div class="type" data-c="c"><span class="tag">Containers</span><h3>GP containers</h3><p>General-purpose closed bodies that keep goods dry and secure, for mini, light and medium trucks.</p></div>
+      <div class="type" data-c="c"><span class="tag">Containers</span><h3>Aluminium containers</h3><p>Lightweight aluminium bodies that cut dead weight, so the truck can carry more.</p></div>
+      <div class="type" data-c="c"><span class="tag">Containers</span><h3>PUF containers</h3><p>Insulated bodies for temperature-sensitive goods, built to take a refrigeration unit.</p></div>
+      <div class="type" data-c="c"><span class="tag">Containers</span><h3>Premium container bodies</h3><p>Closed bodies with a high-grade finish and your own colours, for brand-conscious fleets.</p></div>
+      <div class="type" data-c="l"><span class="tag">Load bodies</span><h3>Load bodies</h3><p>Open goods bodies in standard and custom sizes, for everyday freight.</p></div>
+      <div class="type" data-c="l"><span class="tag">Load bodies</span><h3>Normal high deck bodies</h3><p>High-sided open bodies for bulky loads that need more volume.</p></div>
+      <div class="type" data-c="l"><span class="tag">Load bodies</span><h3>LPG carrying bodies</h3><p>Open frame bodies made to carry gas cylinders safely and in order.</p></div>
+      <div class="type" data-c="l"><span class="tag">Load bodies</span><h3>Poultry bodies</h3><p>Cage-frame bodies with open sides for ventilation when carrying poultry.</p></div>
+      <div class="type" data-c="l"><span class="tag">Load bodies</span><h3>Truck market load bodies</h3><p>Long, strong bodies for heavy multi-axle trucks working the goods market.</p></div>
+      <div class="type" data-c="l"><span class="tag">Load bodies</span><h3>Cement truck load bodies</h3><p>Long heavy-duty bodies for bagged cement and other heavy goods.</p></div>
+      <div class="type tip" data-c="t"><span class="tag">Tippers</span><h3><span class="cft">50</span> CFT tipper</h3><p>Mini trucks and small pickups for light loads, soil and sand on narrow sites.</p></div>
+      <div class="type tip" data-c="t"><span class="tag">Tippers</span><h3><span class="cft">100</span> CFT tipper</h3><p>Light tipper trucks for building sites, farms and local material supply.</p></div>
+      <div class="type tip" data-c="t"><span class="tag">Tippers</span><h3><span class="cft">150</span> CFT tipper</h3><p>Mid-size tippers for regular sand, aggregate and construction runs.</p></div>
+      <div class="type tip" data-c="t"><span class="tag">Tippers</span><h3><span class="cft">250</span> CFT tipper</h3><p>Heavy tipper bodies for large loads and long daily hauls.</p></div>
     </div>
+    <p class="note" style="margin-top:20px">CFT means cubic feet, the volume a tipper body holds. Not sure which size you need? Tell us your load and we will suggest one.</p>
   </div>
 </section>
 
@@ -302,9 +306,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
           <label>Vehicle and chassis<input name="car" placeholder="e.g. Tata 1613 lorry" required></label>
           <label>What do you need?
             <select name="work">
-              <option>New open cargo body</option><option>New closed container body</option><option>New tipper body</option>
-              <option>New platform or flatbed body</option><option>Light commercial body</option><option>Custom body</option>
-              <option>Body repair or accident repair</option><option>Painting</option><option>Other</option>
+              <option>GP container</option><option>Aluminium container</option><option>PUF container</option><option>Premium container body</option><option>Load body</option><option>High deck body</option><option>LPG carrying body</option><option>Poultry body</option><option>Truck market load body</option><option>Cement truck load body</option><option>Tipper, 50 CFT</option><option>Tipper, 100 CFT</option><option>Tipper, 150 CFT</option><option>Tipper, 250 CFT</option><option>Body repair or accident repair</option><option>Painting</option><option>Other</option>
             </select>
           </label>
         </div>
@@ -336,6 +338,15 @@ document.getElementById('phoneLink').href = 'tel:+' + WHATSAPP;
 document.getElementById('phoneLink').textContent = PHONE_DISPLAY;
 document.getElementById('mailLink').href = 'mailto:' + EMAIL;
 document.getElementById('mailLink').textContent = EMAIL;
+
+
+document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click',function(){
+    var f=t.getAttribute('data-f');
+    document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-pressed',x===t?'true':'false')});
+    document.querySelectorAll('.type').forEach(function(c){c.hidden=!(f==='all'||c.getAttribute('data-c')===f)});
+  });
+});
 
 document.getElementById('est').addEventListener('submit', function(e){
   e.preventDefault();
